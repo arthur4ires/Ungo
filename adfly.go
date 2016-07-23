@@ -3,28 +3,29 @@ package ungo
 import (
     "regexp"
     "encoding/base64"
+    "fmt"
 )
 
-var lado1 string
-var lado2 string
+var side1 string
+var side2 string
 
 func Adfly(url string)(string,error){
-    html := htmlDownload(url)
+    html := htmlDownload(url,"www.adf.ly")
 
     ysmmregex := regexp.MustCompile("var ysmm = '(.*)';")
-    resultado := ysmmregex.FindAllStringSubmatch(html,-1)[0:]
+    result := ysmmregex.FindAllStringSubmatch(html,-1)[0:]
 
-    for i := 0 ; i < (len(resultado[0][1]));i++{
+    for i := 0 ; i < (len(result[0][1]));i++{
         if i%2 == 0{
-            lado1 += string(resultado[0][1][i])
+            side1 += string(result[0][1][i])
         }else{
-            lado2 = string(resultado[0][1][i]) + lado2
+            side2 = string(result[0][1][i]) + side2
         }
     }
 
-    data, err := base64.StdEncoding.DecodeString(lado1+lado2)
+    data, err := base64.StdEncoding.DecodeString(side1+side2)
     if err != nil{
-        return "A url não pode ser decodificada!",err
+        return "The url can not be decoded!",err
     }
 
     return string(data[2:]),nil
