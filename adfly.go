@@ -3,7 +3,6 @@ package ungo
 import (
     "regexp"
     "encoding/base64"
-    "fmt"
 )
 
 var side1 string
