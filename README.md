@@ -1,7 +1,15 @@
 # Ungo
 Ungo and a package that has the function of unshorten urls.
-# How to use
-<pre><code>
+# How to install
+You should run the following commands:<br>
+<code>go get github.com/ReiGelado/Ungo</code>
+and
+<code>go install github.com/ReiGelado/Ungo</code>
+<br>There, you can now use :)
+# Example
+A simple example of how to use the library :)
+
+```go
 package main 
 
 import (
@@ -16,4 +24,5 @@ func main() {
 	}
 	fmt.Println(url)
 }
-</code></pre>
+```
+
