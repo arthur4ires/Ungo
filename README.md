@@ -6,6 +6,14 @@ You should run the following commands:<br>
 and
 <code>go install github.com/ReiGelado/Ungo</code>
 <br>There, you can now use :)
+# Shorteners
+The available shorteners are:<br>
+<code>
+adfly ---> http://adf.ly<br>
+adfocus ---> http://adfoc.us<br>
+googl ---> http://goo.gl<br>
+</code>
+
 # Example
 A simple example of how to use the library :)
 
@@ -18,7 +26,7 @@ import (
 )
 
 func main() {
-	url , err := ungo.Url(ungo.Config{Url:"http://adf.ly/1cXbxn",Shorter:"adfly"})
+	url , err := ungo.Url(ungo.Config{Url:"http://adf.ly/1cXbxn",Shortener:"adfly"})
 	if err != nil{
 		panic(err)
 	}
