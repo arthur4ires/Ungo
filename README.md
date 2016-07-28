@@ -9,9 +9,9 @@ and
 # Shorteners
 The available shorteners are:<br>
 <code>
-adfly ---> http://adf.ly<br>
-adfocus ---> http://adfoc.us<br>
-googl ---> http://goo.gl<br>
+adfly ---> http://adf.ly <p>
+adfocus ---> http://adfoc.us <p>
+googl ---> http://goo.gl <p>
 </code>
 
 # Example
