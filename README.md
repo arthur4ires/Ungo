@@ -8,7 +8,7 @@ and
 <br>There, you can now use :)
 # Shorteners
 The available shorteners are:<br>
-<code>adfly ---> http://adf.ly <p>
+<code> adfly ---> http://adf.ly <p>
 adfocus ---> http://adfoc.us <p>
 googl ---> http://goo.gl <p></code>
 
