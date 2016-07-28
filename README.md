@@ -8,9 +8,17 @@ and
 <br>There, you can now use :)
 # Shorteners
 The available shorteners are:<br>
+<<<<<<< HEAD
 <code>adfly ---> http://adf.ly<br>
 adfocus ---> http://adfoc.us<br>
 googl ---> http://goo.gl<br></code>
+=======
+<code>
+adfly ---> http://adf.ly <p>
+adfocus ---> http://adfoc.us <p>
+googl ---> http://goo.gl <p>
+</code>
+>>>>>>> 71ed9ea06dcd1245d1323d40b4f81fa58fd23bc6
 
 # Example
 A simple example of how to use the library :)
