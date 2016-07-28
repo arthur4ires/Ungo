@@ -3,16 +3,20 @@ package ungo
 import (
     "regexp"
     "encoding/base64"
+    "net/http/cookiejar"
+    "errors"
 )
 
 var side1 string
 var side2 string
 
 func Adfly(url string)(string,error){
-    html := htmlDownload(url,"www.adf.ly")
+    cookie , _ := cookiejar.New(nil)
+
+    html := htmlDownload(url,"www.adf.ly",cookie)
 
     ysmmregex := regexp.MustCompile("var ysmm = '(.*)';")
-    result := ysmmregex.FindAllStringSubmatch(html,-1)[0:]
+    result := ysmmregex.FindAllStringSubmatch(html.Html,-1)[0:]
 
     for i := 0 ; i < (len(result[0][1]));i++{
         if i%2 == 0{
@@ -24,7 +28,7 @@ func Adfly(url string)(string,error){
 
     data, err := base64.StdEncoding.DecodeString(side1+side2)
     if err != nil{
-        return "The url can not be decoded!",err
+        return "",errors.New("The url can not be decoded!")
     }
 
     return string(data[2:]),nil
