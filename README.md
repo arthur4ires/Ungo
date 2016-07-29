@@ -10,7 +10,8 @@ and
 The available shorteners are:<br>
 <code> adfly ---> http://adf.ly <p>
 adfocus ---> http://adfoc.us <p>
-googl ---> http://goo.gl <p></code>
+googl ---> http://goo.gl <p>
+shst ---> http://sh.st <p></code>
 
 # Example
 A simple example of how to use the library :)
