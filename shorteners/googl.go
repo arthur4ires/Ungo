@@ -8,7 +8,8 @@ import(
 func Googl(url string)(string,error){
 	cookie , _ := cookiejar.New(nil)
 
-	html := htmlDownload(url,"www.google.com",cookie)
+	HH.Host = "goo.gl"
+	html := htmlDownload(url,cookie)
 
 	return html.URL,nil
 }

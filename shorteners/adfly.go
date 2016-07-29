@@ -13,7 +13,8 @@ var side2 string
 func Adfly(url string)(string,error){
     cookie , _ := cookiejar.New(nil)
 
-    html := htmlDownload(url,"www.adf.ly",cookie)
+    HH.Host = "adf.ly"
+    html := htmlDownload(url,cookie)
 
     ysmmregex := regexp.MustCompile("var ysmm = '(.*)';")
     result := ysmmregex.FindAllStringSubmatch(html.Html,-1)[0:]

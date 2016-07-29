@@ -30,6 +30,9 @@ func Url(info Config)(string,error){
 	}else if info.Shortener == "googl"{
 
 		DecodedReturn.UrlDecoded,DecodedReturn.UrlError = ungo.Googl(info.Url)
+	}else if info.Shortener == "shst"{
+
+		DecodedReturn.UrlDecoded,DecodedReturn.UrlError = ungo.Shst(info.Url)
 	}else{
 		DecodedReturn.UrlDecoded,DecodedReturn.UrlError = "",errors.New("The Shortener state is not valid!")
 	}

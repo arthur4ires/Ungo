@@ -9,7 +9,8 @@ import(
 func Adfocus(url string)(string,error){
 	cookie , _ := cookiejar.New(nil)
 
-	html := htmlDownload(url,"www.adfoc.us",cookie)
+	HH.Host = "adfoc.us"
+	html := htmlDownload(url,cookie)
 
 	urlregex := regexp.MustCompile(`<a href=\"(.*)" class="skip"`)
 	resutl := urlregex.FindAllStringSubmatch(html.Html,-1)[0:]
