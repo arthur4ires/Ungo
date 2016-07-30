@@ -36,6 +36,9 @@ func Url(info Config) (string, error) {
 	} else if info.Shortener == "ad7biz" {
 
 		DecodedReturn.UrlDecoded, DecodedReturn.UrlError = ungo.Ad7biz(info.Url)
+	}else if info.Shortener == "tco"{
+
+		DecodedReturn.UrlDecoded, DecodedReturn.UrlError = ungo.Tco(info.Url)
 	} else {
 		DecodedReturn.UrlDecoded, DecodedReturn.UrlError = "", errors.New("The Shortener state is not valid!")
 	}
