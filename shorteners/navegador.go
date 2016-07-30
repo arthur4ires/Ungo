@@ -26,12 +26,11 @@ type HttpHeader struct {
 }
 
 type ResponseJson struct {
-    DestinationUrl, Status , Url string
-    Success  bool
+	DestinationUrl, Status, Url string
+	Success                     bool
 }
 
 var Rj ResponseJson
-
 
 var HH = HttpHeader{
 	Host:           "www.google.com",
