@@ -25,6 +25,14 @@ type HttpHeader struct {
 	Origin         string
 }
 
+type ResponseJson struct {
+    DestinationUrl, Status , Url string
+    Success  bool
+}
+
+var Rj ResponseJson
+
+
 var HH = HttpHeader{
 	Host:           "www.google.com",
 	UserAgent:      "Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; AS; rv:11.0) like Gecko",
@@ -40,7 +48,7 @@ var HH = HttpHeader{
 func htmlDownload(url string, jar *cookiejar.Jar) HtmlResponse {
 	client := &http.Client{
 		Jar:     jar,
-		Timeout: time.Duration(10 * time.Second),
+		Timeout: time.Duration(3 * time.Second),
 	}
 
 	req, err := http.NewRequest("GET", url, nil)

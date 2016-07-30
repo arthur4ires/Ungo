@@ -9,12 +9,6 @@ import (
 	"time"
 )
 
-type ResponseJson struct {
-	DestinationUrl, Status string
-}
-
-var rj ResponseJson
-
 func Shst(url string) (string, error) {
 	cookie, _ := cookiejar.New(nil)
 
@@ -40,7 +34,7 @@ func Shst(url string) (string, error) {
 	dec := json.NewDecoder(strings.NewReader(jsonResult))
 
 	for {
-		err := dec.Decode(&rj)
+		err := dec.Decode(&Rj)
 		if err == io.EOF {
 			break
 		} else if err != nil {
@@ -48,5 +42,5 @@ func Shst(url string) (string, error) {
 		}
 	}
 
-	return rj.DestinationUrl, nil
+	return Rj.DestinationUrl, nil
 }

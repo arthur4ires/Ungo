@@ -8,11 +8,13 @@ and
 <br>There, you can now use :)
 # Shorteners
 The available shorteners are:<br>
-<code> adfly ---> http://adf.ly <p>
+<code> ad7biz ---> http://ad7.biz <p>
+adfly ---> http://adf.ly <p>
 adfocus ---> http://adfoc.us <p>
 googl ---> http://goo.gl <p>
+linkbucks ---> http://linkbucks.com/ (BETA) <p>
 shst ---> http://sh.st <p>
-ad7biz ---> http://ad7.biz <p></code>
+tco ---> http://t.co <p></code>
 
 # Example
 A simple example of how to use the library :)
