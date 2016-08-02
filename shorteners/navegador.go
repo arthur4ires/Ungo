@@ -26,8 +26,10 @@ type HttpHeader struct {
 }
 
 type ResponseJson struct {
-	DestinationUrl, Status, Url string
-	Success                     bool
+	DestinationUrl , Status string
+	////LinkBucks
+    Success , AdBlockSpotted  bool
+    Url string
 }
 
 var Rj ResponseJson
@@ -47,7 +49,7 @@ var HH = HttpHeader{
 func htmlDownload(url string, jar *cookiejar.Jar) HtmlResponse {
 	client := &http.Client{
 		Jar:     jar,
-		Timeout: time.Duration(3 * time.Second),
+		Timeout: time.Duration(10 * time.Second),
 	}
 
 	req, err := http.NewRequest("GET", url, nil)
