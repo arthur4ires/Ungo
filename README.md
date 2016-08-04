@@ -14,7 +14,8 @@ adfocus ---> http://adfoc.us <p>
 googl ---> http://goo.gl <p>
 linkbucks ---> http://linkbucks.com/ (BETA) <p>
 shst ---> http://sh.st <p>
-tco ---> http://t.co <p></code>
+tco ---> http://t.co <p>
+urlgogs ---> http://urlgo.gs <p></code>
 
 # Example
 A simple example of how to use the library :)
@@ -35,4 +36,3 @@ func main() {
 	fmt.Println(url)
 }
 ```
-
