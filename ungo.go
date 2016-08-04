@@ -18,30 +18,28 @@ var DecodedReturn = new(Decoded)
 
 func Url(info Config) (string, error) {
 
-	if info.Shortener == "adfly" {
+	switch info.Shortener {
 
+	case "adfly":
 		DecodedReturn.UrlDecoded, DecodedReturn.UrlError = ungo.Adfly(info.Url)
-	} else if info.Shortener == "adfocus" {
-
+	case "adfocus":
 		DecodedReturn.UrlDecoded, DecodedReturn.UrlError = ungo.Adfocus(info.Url)
-	} else if info.Shortener == "linkbucks" {
-
+	case "linkbucks":
 		DecodedReturn.UrlDecoded, DecodedReturn.UrlError = ungo.Linkbucks(info.Url)
-	} else if info.Shortener == "googl" {
-
+	case "googl":
 		DecodedReturn.UrlDecoded, DecodedReturn.UrlError = ungo.Googl(info.Url)
-	} else if info.Shortener == "shst" {
-
+	case "shst":
 		DecodedReturn.UrlDecoded, DecodedReturn.UrlError = ungo.Shst(info.Url)
-	} else if info.Shortener == "ad7biz" {
-
+	case "ad7biz":
 		DecodedReturn.UrlDecoded, DecodedReturn.UrlError = ungo.Ad7biz(info.Url)
-	}else if info.Shortener == "tco"{
-
+	case "tco":
 		DecodedReturn.UrlDecoded, DecodedReturn.UrlError = ungo.Tco(info.Url)
-	} else {
+	case "urlgogs":
+		DecodedReturn.UrlDecoded, DecodedReturn.UrlError = ungo.Urlgogs(info.Url)
+	default:
 		DecodedReturn.UrlDecoded, DecodedReturn.UrlError = "", errors.New("The Shortener state is not valid!")
 	}
+		
 
 	return DecodedReturn.UrlDecoded, DecodedReturn.UrlError
 }
