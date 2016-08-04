@@ -39,7 +39,6 @@ func Url(info Config) (string, error) {
 	default:
 		DecodedReturn.UrlDecoded, DecodedReturn.UrlError = "", errors.New("The Shortener state is not valid!")
 	}
-		
 
 	return DecodedReturn.UrlDecoded, DecodedReturn.UrlError
 }

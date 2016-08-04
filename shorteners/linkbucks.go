@@ -16,7 +16,7 @@ const (
 )
 
 func Linkbucks(url string) (string, error) {
-	for i := 0 ;; i++ {
+	for i := 0; ; i++ {
 		cookie, _ := cookiejar.New(nil)
 
 		HH.Referer = "linkbucks.com"
@@ -46,7 +46,7 @@ func Linkbucks(url string) (string, error) {
 		HH.Host = strings.Replace(resultUrlS2[0][1], "http://www.", "", -1)
 
 		htmlAdUrl := htmlDownload(resutladUrl[0][1], html.Jar)
-		
+
 		_ = htmlAdUrl
 
 		time.Sleep(5 * time.Second)
@@ -64,13 +64,13 @@ func Linkbucks(url string) (string, error) {
 			}
 		}
 
-		if Rj.AdBlockSpotted == true{
+		if Rj.AdBlockSpotted == true {
 			continue
 		}
-		
+
 		if Rj.Success == false {
 			continue
-		}else{
+		} else {
 			break
 		}
 	}

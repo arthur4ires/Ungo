@@ -19,8 +19,8 @@ func Adfly(url string) (string, error) {
 	ysmmregex := regexp.MustCompile("var ysmm = '(.*)';")
 	result := ysmmregex.FindAllStringSubmatch(html.Html, -1)[0:]
 
-	if result == nil{
-		return "",errors.New(url + " is not a adfly valid link...")
+	if result == nil {
+		return "", errors.New(url + " is not a adfly valid link...")
 	}
 
 	for i := 0; i < (len(result[0][1])); i++ {

@@ -26,10 +26,10 @@ type HttpHeader struct {
 }
 
 type ResponseJson struct {
-	DestinationUrl , Status string
+	DestinationUrl, Status string
 	////LinkBucks
-    Success , AdBlockSpotted  bool
-    Url string
+	Success, AdBlockSpotted bool
+	Url                     string
 }
 
 var Rj ResponseJson
