@@ -16,7 +16,8 @@ linkbucks ---> http://linkbucks.com/<p>
 shst ---> http://sh.st <p>
 tco ---> http://t.co <p>
 urlgogs ---> http://urlgo.gs <p>
-linktl ---> http://link.tl <p></code>
+linktl ---> http://link.tl <p>
+coegin ---> http://coeg.in <p></code>
 
 # Example
 A simple example of how to use the library :)
