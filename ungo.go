@@ -36,6 +36,8 @@ func Url(info Config) (string, error) {
 		DecodedReturn.UrlDecoded, DecodedReturn.UrlError = ungo.Tco(info.Url)
 	case "urlgogs":
 		DecodedReturn.UrlDecoded, DecodedReturn.UrlError = ungo.Urlgogs(info.Url)
+	case "linktl":
+		DecodedReturn.UrlDecoded, DecodedReturn.UrlError = ungo.Linktl(info.Url)
 	default:
 		DecodedReturn.UrlDecoded, DecodedReturn.UrlError = "", errors.New("The Shortener state is not valid!")
 	}

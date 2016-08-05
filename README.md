@@ -12,10 +12,11 @@ The available shorteners are:<br>
 adfly ---> http://adf.ly <p>
 adfocus ---> http://adfoc.us <p>
 googl ---> http://goo.gl <p>
-linkbucks ---> http://linkbucks.com/ (BETA) <p>
+linkbucks ---> http://linkbucks.com/<p>
 shst ---> http://sh.st <p>
 tco ---> http://t.co <p>
-urlgogs ---> http://urlgo.gs <p></code>
+urlgogs ---> http://urlgo.gs <p>
+linktl ---> http://link.tl <p></code>
 
 # Example
 A simple example of how to use the library :)
