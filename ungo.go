@@ -2,6 +2,7 @@ package ungo
 
 import (
 	"errors"
+	"strings"
 	"ungo/shorteners"
 )
 
@@ -14,35 +15,31 @@ type Decoded struct {
 	UrlError   error
 }
 
-var DecodedReturn = new(Decoded)
+type function func(string) (string, error)
 
-func Url(info Config) (string, error) {
+func tratament(y string) string {
+	return strings.Replace(y, " ", "", -1)
+}
 
-	switch info.Shortener {
+func Shorten(info Config) (string, error) {
+	info.Shortener = tratament(info.Shortener) //spaces
 
-	case "adfly":
-		DecodedReturn.UrlDecoded, DecodedReturn.UrlError = ungo.Adfly(info.Url)
-	case "adfocus":
-		DecodedReturn.UrlDecoded, DecodedReturn.UrlError = ungo.Adfocus(info.Url)
-	case "linkbucks":
-		DecodedReturn.UrlDecoded, DecodedReturn.UrlError = ungo.Linkbucks(info.Url)
-	case "googl":
-		DecodedReturn.UrlDecoded, DecodedReturn.UrlError = ungo.Googl(info.Url)
-	case "shst":
-		DecodedReturn.UrlDecoded, DecodedReturn.UrlError = ungo.Shst(info.Url)
-	case "ad7biz":
-		DecodedReturn.UrlDecoded, DecodedReturn.UrlError = ungo.Ad7biz(info.Url)
-	case "tco":
-		DecodedReturn.UrlDecoded, DecodedReturn.UrlError = ungo.Tco(info.Url)
-	case "urlgogs":
-		DecodedReturn.UrlDecoded, DecodedReturn.UrlError = ungo.Urlgogs(info.Url)
-	case "linktl":
-		DecodedReturn.UrlDecoded, DecodedReturn.UrlError = ungo.Linktl(info.Url)
-	case "coegin":
-		DecodedReturn.UrlDecoded, DecodedReturn.UrlError = ungo.Coegin(info.Url)
-	default:
-		DecodedReturn.UrlDecoded, DecodedReturn.UrlError = "", errors.New("The Shortener state is not valid!")
+	shortenersMap := map[string]function{
+		"adfly":     ungo.Adfly,
+		"ad7biz":    ungo.Ad7biz,
+		"adfocus":   ungo.Adfocus,
+		"coegin":    ungo.Coegin,
+		"googl":     ungo.Googl,
+		"linkbucks": ungo.Linkbucks,
+		"linktl":    ungo.Linktl,
+		"shst":      ungo.Shst,
+		"tco":       ungo.Tco,
+		"urlgogs":   ungo.Urlgogs,
 	}
 
-	return DecodedReturn.UrlDecoded, DecodedReturn.UrlError
+	if val, ok := shortenersMap[info.Shortener]; ok {
+		return val(info.Url)
+	} else {
+		return "", errors.New("The Shortener state is not valid!")
+	}
 }
