@@ -23,18 +23,19 @@ coegin ---> http://coeg.in <p></code>
 A simple example of how to use the library :)
 
 ```go
-package main 
+package main
 
 import (
-	"github.com/ReiGelado/Ungo"
 	"fmt"
+	"ungo"
 )
 
 func main() {
-	url , err := ungo.Url(ungo.Config{Url:"http://adf.ly/1cXbxn",Shortener:"adfly"})
-	if err != nil{
+	url, err := ungo.Shorten(ungo.Config{Url: "http://adf.ly/tYjLr", Shortener:"adfly"})
+	if err != nil {
 		panic(err)
 	}
 	fmt.Println(url)
 }
+
 ```
