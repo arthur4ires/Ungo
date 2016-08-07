@@ -17,7 +17,8 @@ shst ---> http://sh.st <p>
 tco ---> http://t.co <p>
 urlgogs ---> http://urlgo.gs <p>
 linktl ---> http://link.tl <p>
-coegin ---> http://coeg.in <p></code>
+coegin ---> http://coeg.in <p>
+amankanlink --> http://kombatch.amankan.link <p></code>
 
 # Example
 A simple example of how to use the library :)
