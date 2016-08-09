@@ -13,6 +13,7 @@ adfly ---> http://adf.ly <p>
 adfocus ---> http://adfoc.us <p>
 googl ---> http://goo.gl <p>
 linkbucks ---> http://linkbucks.com/<p>
+linkshrink ---> http://linkshrink.net/ <p>
 shst ---> http://sh.st <p>
 tco ---> http://t.co <p>
 urlgogs ---> http://urlgo.gs <p>
