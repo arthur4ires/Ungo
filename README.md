@@ -11,15 +11,15 @@ The available shorteners are:<br>
 <code> ad7biz ---> http://ad7.biz <p>
 adfly ---> http://adf.ly <p>
 adfocus ---> http://adfoc.us <p>
+amankanlink --> http://kombatch.amankan.link <p>
+coegin ---> http://coeg.in <p>
 googl ---> http://goo.gl <p>
 linkbucks ---> http://linkbucks.com/<p>
 linkshrink ---> http://linkshrink.net/ <p>
+linktl ---> http://link.tl <p>
 shst ---> http://sh.st <p>
 tco ---> http://t.co <p>
-urlgogs ---> http://urlgo.gs <p>
-linktl ---> http://link.tl <p>
-coegin ---> http://coeg.in <p>
-amankanlink --> http://kombatch.amankan.link <p></code>
+urlgogs ---> http://urlgo.gs <p></code>
 
 # Example
 A simple example of how to use the library :)
