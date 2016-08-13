@@ -1,9 +1,11 @@
 package ungo
 
 import (
+	"encoding/base64"
 	"io/ioutil"
 	"net/http"
 	"net/http/cookiejar"
+	"strings"
 	"time"
 )
 
@@ -79,4 +81,16 @@ func htmlDownload(url string, jar *cookiejar.Jar) HtmlResponse {
 	}
 
 	return HtmlResponse{Html: string(body), Jar: jar, URL: resp.Request.URL.String()}
+}
+
+func Base64Decode(b64 string) (string, error) {
+	b64 = strings.Replace(b64, "=", "", -1) //  illegal base64 data at input byte 56
+
+	data, err := base64.StdEncoding.DecodeString(b64)
+
+	if err != nil {
+		panic(err)
+	}
+
+	return string(data), nil
 }

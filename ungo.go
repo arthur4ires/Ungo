@@ -2,7 +2,6 @@ package ungo
 
 import (
 	"errors"
-	"strings"
 	"ungo/shorteners"
 )
 
@@ -17,13 +16,7 @@ type Decoded struct {
 
 type function func(string) (string, error)
 
-func tratament(y string) string {
-	return strings.Replace(y, " ", "", -1)
-}
-
 func Shorten(info Config) (string, error) {
-	info.Shortener = tratament(info.Shortener) //spaces
-
 	shortenersMap := map[string]function{
 		"adfly":       ungo.Adfly,
 		"ad7biz":      ungo.Ad7biz,
@@ -35,12 +28,17 @@ func Shorten(info Config) (string, error) {
 		"linkshrink":  ungo.Linkshrink,
 		"linktl":      ungo.Linktl,
 		"shst":        ungo.Shst,
+		"shortenid":   ungo.Shortenid,
 		"tco":         ungo.Tco,
 		"urlgogs":     ungo.Urlgogs,
 	}
 
-	if val, ok := shortenersMap[info.Shortener]; ok {
-		return val(info.Url)
+	if info.Shortener == "" {
+		return "", errors.New("Shortener can not be empty ...")
+	}
+
+	if urlReturn, ok := shortenersMap[info.Shortener]; ok {
+		return urlReturn(info.Url)
 	} else {
 		return "", errors.New("The Shortener state is not valid!")
 	}

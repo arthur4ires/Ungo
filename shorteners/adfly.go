@@ -16,7 +16,7 @@ func Adfly(url string) (string, error) {
 	html := htmlDownload(url, cookie)
 
 	if html.URL == "http://adf.ly/not-found.php" {
-		return "" , errors.New("The URL is not a ADFLY valid link...")
+		return "", errors.New("The URL is not a ADFLY valid link...")
 	}
 
 	ysmmregex := regexp.MustCompile("var ysmm = '(.*)';")
@@ -35,7 +35,7 @@ func Adfly(url string) (string, error) {
 	}
 
 	data, err := Base64Decode(side1 + side2)
-	if err != nil{
+	if err != nil {
 		panic(err)
 	}
 
