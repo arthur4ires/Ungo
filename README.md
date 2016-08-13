@@ -17,7 +17,9 @@ googl ---> http://goo.gl <p>
 linkbucks ---> http://linkbucks.com/<p>
 linkshrink ---> http://linkshrink.net/ <p>
 linktl ---> http://link.tl <p>
+playimg ---> http://playimg.com <p>
 shst ---> http://sh.st <p>
+shortenid ---> http://shorten.id <p>
 tco ---> http://t.co <p>
 urlgogs ---> http://urlgo.gs <p></code>
 
