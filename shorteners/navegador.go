@@ -1,10 +1,12 @@
 package ungo
 
 import (
+	"bytes"
 	"encoding/base64"
 	"io/ioutil"
 	"net/http"
 	"net/http/cookiejar"
+	"net/url"
 	"strings"
 	"time"
 )
@@ -32,7 +34,17 @@ type ResponseJson struct {
 	Success, AdBlockSpotted     bool
 }
 
+type Post struct {
+	Data url.Values
+	Post bool
+}
+
+var req *http.Request
+var err error
+
 var Rj ResponseJson
+
+var P Post
 
 var HH = HttpHeader{
 	Host:           "www.google.com",
@@ -52,10 +64,16 @@ func htmlDownload(url string, jar *cookiejar.Jar) HtmlResponse {
 		Timeout: time.Duration(10 * time.Second),
 	}
 
-	req, err := http.NewRequest("GET", url, nil)
-
-	if err != nil {
-		panic(err)
+	if P.Post == false {
+		req, err = http.NewRequest("GET", url, nil)
+		if err != nil {
+			panic(err)
+		}
+	} else {
+		req, err = http.NewRequest("POST", url, bytes.NewBufferString(P.Data.Encode()))
+		if err != nil {
+			panic(err)
+		}
 	}
 
 	req.Header.Set("Host", HH.Host)
