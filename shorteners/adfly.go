@@ -1,7 +1,6 @@
 package ungo
 
 import (
-	"encoding/base64"
 	"errors"
 	"net/http/cookiejar"
 	"regexp"
@@ -15,6 +14,10 @@ func Adfly(url string) (string, error) {
 
 	HH.Host = "adf.ly"
 	html := htmlDownload(url, cookie)
+
+	if html.URL == "http://adf.ly/not-found.php" {
+		return "" , errors.New("The URL is not a ADFLY valid link...")
+	}
 
 	ysmmregex := regexp.MustCompile("var ysmm = '(.*)';")
 	result := ysmmregex.FindAllStringSubmatch(html.Html, -1)[0:]
@@ -31,9 +34,9 @@ func Adfly(url string) (string, error) {
 		}
 	}
 
-	data, err := base64.StdEncoding.DecodeString(side1 + side2)
-	if err != nil {
-		return "", errors.New("The url can not be decoded!")
+	data, err := Base64Decode(side1 + side2)
+	if err != nil{
+		panic(err)
 	}
 
 	return string(data[2:]), nil
