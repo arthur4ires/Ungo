@@ -31,7 +31,7 @@ package main
 
 import (
 	"fmt"
-	"ungo"
+	"github.com/ReiGelado/Ungo"
 )
 
 func main() {
