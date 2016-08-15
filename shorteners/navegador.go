@@ -40,6 +40,7 @@ type Post struct {
 }
 
 var req *http.Request
+
 var err error
 
 var Rj ResponseJson
