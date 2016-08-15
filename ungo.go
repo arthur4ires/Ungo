@@ -33,6 +33,7 @@ func Shorten(info Config) (string, error) {
 		"shortenid":   ungo.Shortenid,
 		"tco":         ungo.Tco,
 		"urlgogs":     ungo.Urlgogs,
+		"voyeurimage": ungo.Voyeurimage,
 	}
 
 	if info.Shortener == "" {
