@@ -24,6 +24,7 @@ func Shorten(info Config) (string, error) {
 		"amankanlink": ungo.Amankanlink,
 		"coegin":      ungo.Coegin,
 		"googl":       ungo.Googl,
+		"gtaind":	   ungo.Gtaind,
 		"hrefli":      ungo.Hrefli,
 		"imagep2p":    ungo.Imagep2p,
 		"linkbucks":   ungo.Linkbucks,

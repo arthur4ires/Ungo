@@ -14,6 +14,7 @@ adfocus ---> http://adfoc.us <p>
 amankanlink --> http://kombatch.amankan.link <p>
 coegin ---> http://coeg.in <p>
 googl ---> http://goo.gl <p>
+gtaind ---> http://i.gtaind.com
 hrefli ---> http://href.li <p>
 linkbucks ---> http://linkbucks.com/<p>
 linkshrink ---> http://linkshrink.net/ <p>
