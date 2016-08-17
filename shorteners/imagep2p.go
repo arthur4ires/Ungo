@@ -1,8 +1,9 @@
 package ungo
 
 import (
-	"net/http/cookiejar"
+	"fmt"
 	"net/http"
+	"net/http/cookiejar"
 	"net/url"
 	"regexp"
 )
@@ -14,23 +15,25 @@ func Imagep2p(url_ string) (string, error) {
 
 	var cookies []*http.Cookie
 
-    ageVerificationData := &http.Cookie{
-        Name:   "AgeVerification",
-        Path:   "/",
-        Domain: "imagep2p.com",
-        Value: "1",
-    }
+	ageVerificationData := &http.Cookie{
+		Name:   "AgeVerification",
+		Path:   "/",
+		Domain: "imagep2p.com",
+		Value:  "1",
+	}
 
-    cookieURL, _ := url.Parse(url_)
+	cookieURL, _ := url.Parse(url_)
 
-    cookies = append(cookies,ageVerificationData)
+	cookies = append(cookies, ageVerificationData)
 
-    cookie.SetCookies(cookieURL,cookies)
+	cookie.SetCookies(cookieURL, cookies)
 
-	html := htmlDownload(url_,cookie)
+	html := htmlDownload(url_, cookie)
 
 	urlregex := regexp.MustCompile(`src="(images/.*?)"`)
 	resutl := urlregex.FindAllStringSubmatch(html.Html, -1)[0:]
+
+	fmt.Println(resutl)
 
 	return "http://imagep2p.com/" + resutl[0][1], nil
 }
