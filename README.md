@@ -13,6 +13,7 @@ adfly ---> http://adf.ly <p>
 adfocus ---> http://adfoc.us <p>
 amankanlink --> http://kombatch.amankan.link <p>
 coegin ---> http://coeg.in <p>
+comicon ---> http://comicon.com.br <p>
 googl ---> http://goo.gl <p>
 gtaind ---> http://i.gtaind.com
 hrefli ---> http://href.li <p>
