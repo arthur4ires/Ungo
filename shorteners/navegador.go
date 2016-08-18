@@ -27,6 +27,7 @@ type HttpHeader struct {
 	Referer        string
 	XRequestedWith string
 	Origin         string
+	TimeOut 	   int
 }
 
 type ResponseJson struct {
@@ -39,15 +40,16 @@ type Post struct {
 	Post bool
 }
 
-var req *http.Request
+var (
+	req *http.Request
 
-var err error
+	err error
 
-var Rj ResponseJson
+	Rj ResponseJson
 
-var P Post
+	P Post
 
-var HH = HttpHeader{
+	HH = HttpHeader{
 	Host:           "www.google.com",
 	UserAgent:      "Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; AS; rv:11.0) like Gecko",
 	Accept:         "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
@@ -57,12 +59,14 @@ var HH = HttpHeader{
 	ContentType:    "application/x-www-form-urlencoded",
 	XRequestedWith: "",
 	Origin:         "",
-}
+	TimeOut:		20,
+	}
+)
 
 func htmlDownload(url string, jar *cookiejar.Jar) HtmlResponse {
 	client := &http.Client{
 		Jar:     jar,
-		Timeout: time.Duration(10 * time.Second),
+		Timeout: time.Duration(time.Duration(HH.TimeOut) * time.Second), //POG
 	}
 
 	if P.Post == false {
