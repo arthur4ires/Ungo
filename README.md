@@ -23,7 +23,7 @@ playimg ---> http://playimg.com <p>
 shst ---> http://sh.st <p>
 shortenid ---> http://shorten.id <p>
 tco ---> http://t.co <p>
-urlgogs ---> http://urlgo.gs <p></code>
+urlgogs ---> http://urlgo.gs <p>
 voyeurimage ---> http://voyeurimage.org <p></code>
 
 # Example
