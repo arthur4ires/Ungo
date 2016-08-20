@@ -17,7 +17,7 @@ type Decoded struct {
 type function func(string) (string, error)
 
 func Shorten(info Config) (string, error) {
-	
+
 	shortenersMap := map[string]function{
 		"adfly":       ungo.Adfly,
 		"ad7biz":      ungo.Ad7biz,
@@ -26,8 +26,9 @@ func Shorten(info Config) (string, error) {
 		"coegin":      ungo.Coegin,
 		"comicon":     ungo.Comicon,
 		"googl":       ungo.Googl,
-		"gtaind":	   ungo.Gtaind,
+		"gtaind":      ungo.Gtaind,
 		"hrefli":      ungo.Hrefli,
+		"img3x":       ungo.Img3x,
 		"imagep2p":    ungo.Imagep2p,
 		"linkbucks":   ungo.Linkbucks,
 		"linkshrink":  ungo.Linkshrink,
