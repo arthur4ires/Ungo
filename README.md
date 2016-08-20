@@ -15,7 +15,7 @@ amankanlink --> http://kombatch.amankan.link <p>
 coegin ---> http://coeg.in <p>
 comicon ---> http://comicon.com.br <p>
 googl ---> http://goo.gl <p>
-gtaind ---> http://i.gtaind.com
+gtaind ---> http://i.gtaind.com <p>
 hrefli ---> http://href.li <p>
 img3x ---> http://img3x.com <p>
 linkbucks ---> http://linkbucks.com/<p>
