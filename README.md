@@ -8,7 +8,9 @@ and
 <br>There, you can now use :)
 # Shorteners
 The available shorteners are:<br>
-<code> ad7biz ---> http://ad7.biz <p>
+<code>1bebiz ---> http://1be.biz <p>
+1tinynet ---> http://1tiny.net <p>
+ad7biz ---> http://ad7.biz <p>
 adfly ---> http://adf.ly <p>
 adfocus ---> http://adfoc.us <p>
 amankanlink --> http://kombatch.amankan.link <p>
