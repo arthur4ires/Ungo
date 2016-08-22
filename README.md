@@ -8,7 +8,7 @@ and
 <br>There, you can now use :)
 # Shorteners
 The available shorteners are:<br>
-<code>1bebiz ---> http://1be.biz <p>
+<code> 1bebiz ---> http://1be.biz <p>
 1tinynet ---> http://1tiny.net <p>
 ad7biz ---> http://ad7.biz <p>
 adfly ---> http://adf.ly <p>
@@ -50,3 +50,5 @@ func main() {
 }
 
 ```
+# License
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Ungo</span> está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional</a>.
