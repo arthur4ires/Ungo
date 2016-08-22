@@ -1,5 +1,5 @@
 # Ungo
-Ungo and a package that has the function of unshorten urls.
+Ungo is a package that has the function of unshorten urls.
 # How to install
 You should run the following commands:<br>
 <code>go get github.com/ReiGelado/Ungo</code>
