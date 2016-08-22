@@ -10,6 +10,7 @@ and
 The available shorteners are:<br>
 <code> 1bebiz ---> http://1be.biz <p>
 1tinynet ---> http://1tiny.net <p>
+ad2links ---> https://ad2links.com <p>
 ad7biz ---> http://ad7.biz <p>
 adfly ---> http://adf.ly <p>
 adfocus ---> http://adfoc.us <p>

@@ -22,6 +22,7 @@ func Shorten(info Config) (string, error) {
 		"1bebiz":	   ungo.Bebiz,
 		"1tinynet":    ungo.Tinynet,
 		"adfly":       ungo.Adfly,
+		"ad2links":    ungo.Ad2links,
 		"ad7biz":      ungo.Ad7biz,
 		"adfocus":     ungo.Adfocus,
 		"amankanlink": ungo.Amankanlink,
