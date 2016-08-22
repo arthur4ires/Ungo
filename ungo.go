@@ -20,6 +20,7 @@ func Shorten(info Config) (string, error) {
 
 	shortenersMap := map[string]function{
 		"1bebiz":	   ungo.Bebiz,
+		"1tinynet":    ungo.Tinynet,
 		"adfly":       ungo.Adfly,
 		"ad7biz":      ungo.Ad7biz,
 		"adfocus":     ungo.Adfocus,
