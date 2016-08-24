@@ -26,6 +26,7 @@ linkshrink ---> http://linkshrink.net/ <p>
 linktl ---> http://link.tl <p>
 playimg ---> http://playimg.com <p>
 shst ---> http://sh.st <p>
+shtio ---> http://sht.io <p>
 shortenid ---> http://shorten.id <p>
 tco ---> http://t.co <p>
 urlgogs ---> http://urlgo.gs <p>

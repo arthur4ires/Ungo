@@ -39,6 +39,7 @@ func Shorten(info Config) (string, error) {
 		"linktl":      ungo.Linktl,
 		"playimg":     ungo.Playimg,
 		"shst":        ungo.Shst,
+		"shtio":	   ungo.Shtio,
 		"shortenid":   ungo.Shortenid,
 		"tco":         ungo.Tco,
 		"urlgogs":     ungo.Urlgogs,
