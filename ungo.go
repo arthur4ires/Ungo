@@ -29,6 +29,7 @@ func Shorten(info Config) (string, error) {
 		"coegin":          ungo.Coegin,
 		"comicon":         ungo.Comicon,
 		"freeanimeonline": ungo.Freeanimeonline,
+		"gadget14":		   ungo.Gadget14,	
 		"googl":           ungo.Googl,
 		"gtaind":          ungo.Gtaind,
 		"hrefli":          ungo.Hrefli,
