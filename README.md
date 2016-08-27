@@ -17,6 +17,7 @@ adfocus ---> http://adfoc.us <p>
 amankanlink --> http://kombatch.amankan.link <p>
 coegin ---> http://coeg.in <p>
 comicon ---> http://comicon.com.br <p>
+freeanimeonline ---> http://freeanimeonline.xyz <p>
 googl ---> http://goo.gl <p>
 gtaind ---> http://i.gtaind.com <p>
 hrefli ---> http://href.li <p>
