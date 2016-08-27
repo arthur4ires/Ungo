@@ -24,6 +24,7 @@ img3x ---> http://img3x.com <p>
 linkbucks ---> http://linkbucks.com/<p>
 linkshrink ---> http://linkshrink.net/ <p>
 linktl ---> http://link.tl <p>
+picnictrans ---> http://www.picnictrans.com/ <p>
 playimg ---> http://playimg.com <p>
 ppw ---> http://p.pw <p>
 shst ---> http://sh.st <p>
