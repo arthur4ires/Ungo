@@ -3,7 +3,6 @@ package ungo
 import (
 	"net/http/cookiejar"
 	"regexp"
-	"fmt"
 )
 
 func Picnictrans(url string) (string, error) {
