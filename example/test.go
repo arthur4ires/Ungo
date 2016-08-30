@@ -7,7 +7,7 @@ import (
 
 func main() {
 	
-	url , err := ungo.Url(ungo.Config{Url:"http://adf.ly/tYjLr",Shortener:"adfly"})
+	url , err := ungo.Shorten(ungo.Config{Url:"http://adf.ly/tYjLr",Shortener:"adfly"})
 
 	if err != nil{
 		panic(err)
