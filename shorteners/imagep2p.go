@@ -1,7 +1,6 @@
 package ungo
 
 import (
-	"fmt"
 	"net/http"
 	"net/http/cookiejar"
 	"net/url"
@@ -31,9 +30,7 @@ func Imagep2p(url_ string) (string, error) {
 	html := htmlDownload(url_, cookie)
 
 	urlregex := regexp.MustCompile(`src="(images/.*?)"`)
-	resutl := urlregex.FindAllStringSubmatch(html.Html, -1)[0:]
-
-	fmt.Println(resutl)
-
+	resutl := urlregex.FindAllStringSubmatch(html.Html, -1)[0:
+]
 	return "http://imagep2p.com/" + resutl[0][1], nil
 }
