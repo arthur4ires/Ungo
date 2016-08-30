@@ -21,6 +21,8 @@ googl ---> http://goo.gl <p>
 gtaind ---> http://i.gtaind.com <p>
 hrefli ---> http://href.li <p>
 img3x ---> http://img3x.com <p>
+imagecurl ---> http://imgcurl.com <p>
+imagep2p ---> http://imagep2p.com <p>
 linkbucks ---> http://linkbucks.com/<p>
 linkshrink ---> http://linkshrink.net/ <p>
 linktl ---> http://link.tl <p>
