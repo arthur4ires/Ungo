@@ -38,6 +38,7 @@ func Shorten(info Config) (string, error) {
 		"linkbucks":   ungo.Linkbucks,
 		"linkshrink":  ungo.Linkshrink,
 		"linktl":      ungo.Linktl,
+		"motonewsclub":ungo.Motonewsclub,
 		"picnictrans": ungo.Picnictrans,
 		"playimg":     ungo.Playimg,
 		"ppw":         ungo.Ppw,

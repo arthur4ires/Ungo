@@ -28,6 +28,7 @@ imagep2p ---> http://imagep2p.com <p>
 linkbucks ---> http://linkbucks.com/<p>
 linkshrink ---> http://linkshrink.net/ <p>
 linktl ---> http://link.tl <p>
+motonewsclub ---> http://motonews.club <p>
 picnictrans ---> http://www.picnictrans.com/ <p>
 playimg ---> http://playimg.com <p>
 ppw ---> http://p.pw <p>
