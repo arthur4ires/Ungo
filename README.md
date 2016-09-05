@@ -22,6 +22,7 @@ gadget14 ---> http://gadget14.pw <p>
 googl ---> http://goo.gl <p>
 gtaind ---> http://i.gtaind.com <p>
 hrefli ---> http://href.li <p>
+imagebam ---> http://imagebam.com <p>
 img3x ---> http://img3x.com <p>
 imagecurl ---> http://imgcurl.com <p>
 imagep2p ---> http://imagep2p.com <p>
