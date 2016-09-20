@@ -1,13 +1,16 @@
 package main 
 
 import (
-	"github.com/ReiGelado/Ungo"
+	"ungo"
 	"fmt"
 )
 
 func main() {
 	
-	url , err := ungo.Shorten(ungo.Config{Url:"http://adf.ly/tYjLr",Shortener:"adfly"})
+	url , err := ungo.Shorten(ungo.Config{
+		Url:"http://imgfiles.org/hc5rv10qn9sc/CUTE.gif.html",
+		Shortener:"imgfiles",
+	})
 
 	if err != nil{
 		panic(err)

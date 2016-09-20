@@ -22,6 +22,7 @@ gadget14 ---> http://gadget14.pw <p>
 googl ---> http://goo.gl <p>
 gtaind ---> http://i.gtaind.com <p>
 hrefli ---> http://href.li <p>
+imgfiles ---> http://imgfiles.org <p>
 img3x ---> http://img3x.com <p>
 linkbucks ---> http://linkbucks.com/<p>
 linkshrink ---> http://linkshrink.net/ <p>

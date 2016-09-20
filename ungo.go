@@ -33,6 +33,7 @@ func Shorten(info Config) (string, error) {
 		"googl":           ungo.Googl,
 		"gtaind":          ungo.Gtaind,
 		"hrefli":          ungo.Hrefli,
+		"imgfiles":        ungo.ImgFiles,
 		"img3x":           ungo.Img3x,
 		"imagep2p":        ungo.Imagep2p,
 		"linkbucks":       ungo.Linkbucks,
