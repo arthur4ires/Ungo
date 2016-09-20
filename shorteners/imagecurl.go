@@ -7,17 +7,17 @@ import (
 	"regexp"
 )
 
-func Imagep2p(url_ string) (string, error) {
+func Imagecurl(url_ string) (string, error) {
 	cookie, _ := cookiejar.New(nil)
 
-	HH.Host = "imagep2p.com"
+	HH.Host = "imgcurl.com"
 
 	var cookies []*http.Cookie
 
-	ageVerificationData := &http.Cookie{
+	ageVerificationData := &http.Cookie{ //imagep2p
 		Name:   "AgeVerification",
 		Path:   "/",
-		Domain: "imagep2p.com",
+		Domain: "imgcurl.com",
 		Value:  "1",
 	}
 
@@ -30,7 +30,8 @@ func Imagep2p(url_ string) (string, error) {
 	html := htmlDownload(url_, cookie)
 
 	urlregex := regexp.MustCompile(`src="(images/.*?)"`)
-	resutl := urlregex.FindAllStringSubmatch(html.Html, -1)[0:
-]
-	return "http://imagep2p.com/" + resutl[0][1], nil
+	resutl := urlregex.FindAllStringSubmatch(html.Html, -1)[0:]
+
+
+	return "http://imgcurl.com/" + resutl[0][1], nil
 }
