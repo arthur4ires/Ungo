@@ -22,11 +22,8 @@ gadget14 ---> http://gadget14.pw <p>
 googl ---> http://goo.gl <p>
 gtaind ---> http://i.gtaind.com <p>
 hrefli ---> http://href.li <p>
-<<<<<<< HEAD
 imgfiles ---> http://imgfiles.org <p>
-=======
 imagebam ---> http://imagebam.com <p>
->>>>>>> fbd9638adfc5615d472d809f15d83d56e0e4dee1
 img3x ---> http://img3x.com <p>
 imagecurl ---> http://imgcurl.com <p>
 imagep2p ---> http://imagep2p.com <p>
@@ -40,6 +37,7 @@ ppw ---> http://p.pw <p>
 shst ---> http://sh.st <p>
 shtio ---> http://sht.io <p>
 shortenid ---> http://shorten.id <p>
+smllio ---> http://smll.io <p>
 tco ---> http://t.co <p>
 urlgogs ---> http://urlgo.gs <p>
 voyeurimage ---> http://voyeurimage.org <p></code>

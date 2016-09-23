@@ -8,8 +8,8 @@ import (
 func main() {
 	
 	url , err := ungo.Shorten(ungo.Config{
-		Url:"http://imgfiles.org/hc5rv10qn9sc/CUTE.gif.html",
-		Shortener:"imgfiles",
+		Url:"https://smll.io/9NSF7",
+		Shortener:"smllio",
 	})
 
 	if err != nil{
